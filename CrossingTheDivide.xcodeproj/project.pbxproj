@@ -14,6 +14,9 @@
 		F4BF37AA1E3EFA7A00CACE2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4BF37A81E3EFA7A00CACE2F /* LaunchScreen.storyboard */; };
 		F4BF37B51E3EFA7A00CACE2F /* CrossingTheDivideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BF37B41E3EFA7A00CACE2F /* CrossingTheDivideTests.swift */; };
 		F4BF37C01E3EFA7A00CACE2F /* CrossingTheDivideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BF37BF1E3EFA7A00CACE2F /* CrossingTheDivideUITests.swift */; };
+		F4BF37D11E3EFBDA00CACE2F /* CPP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4BF37CF1E3EFBDA00CACE2F /* CPP.cpp */; };
+		F4BF37D31E3EFDEC00CACE2F /* OCPP.mm in Sources */ = {isa = PBXBuildFile; fileRef = F4BF37D21E3EFDEC00CACE2F /* OCPP.mm */; };
+		F4FD10D51E5BE6FF0050F69A /* libCrossingTheDivideLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4FD10D41E5BE6FF0050F69A /* libCrossingTheDivideLib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F481D9331E5BE4D30029D71E /* libCrossingTheDivideLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCrossingTheDivideLib.a; path = "../CrossingTheDivideLib/CrossingTheDivideLib/CrossingTheDivideLib 2017-02-20 21-59-43/Products/usr/local/lib/libCrossingTheDivideLib.a"; sourceTree = "<group>"; };
+		F49C67CF1E404CC500C4C59F /* CrossingTheDivideLib.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CrossingTheDivideLib.hpp; path = ../../CrossingTheDivideLib/CrossingTheDivideLib/CrossingTheDivideLib.hpp; sourceTree = "<group>"; };
 		F4BF379C1E3EFA7A00CACE2F /* CrossingTheDivide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrossingTheDivide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4BF379F1E3EFA7A00CACE2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4BF37A11E3EFA7A00CACE2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,12 @@
 		F4BF37BB1E3EFA7A00CACE2F /* CrossingTheDivideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrossingTheDivideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4BF37BF1E3EFA7A00CACE2F /* CrossingTheDivideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossingTheDivideUITests.swift; sourceTree = "<group>"; };
 		F4BF37C11E3EFA7A00CACE2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4BF37CE1E3EFBDA00CACE2F /* CrossingTheDivide-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CrossingTheDivide-Bridging-Header.h"; sourceTree = "<group>"; };
+		F4BF37CF1E3EFBDA00CACE2F /* CPP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CPP.cpp; path = CPP/CPP.cpp; sourceTree = "<group>"; };
+		F4BF37D01E3EFBDA00CACE2F /* CPP.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CPP.hpp; path = CPP/CPP.hpp; sourceTree = "<group>"; };
+		F4BF37D21E3EFDEC00CACE2F /* OCPP.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OCPP.mm; path = CPP/OCPP.mm; sourceTree = "<group>"; };
+		F4BF37D41E3EFE8F00CACE2F /* OCPP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCPP.h; path = CPP/OCPP.h; sourceTree = "<group>"; };
+		F4FD10D41E5BE6FF0050F69A /* libCrossingTheDivideLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCrossingTheDivideLib.a; path = ../CrossingTheDivideLib/CrossingTheDivideLib/CrossingTheDivideLib/Products/usr/local/lib/libCrossingTheDivideLib.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4FD10D51E5BE6FF0050F69A /* libCrossingTheDivideLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F49C67CC1E404C3300C4C59F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4FD10D41E5BE6FF0050F69A /* libCrossingTheDivideLib.a */,
+				F481D9331E5BE4D30029D71E /* libCrossingTheDivideLib.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F4BF37931E3EFA7A00CACE2F = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +102,7 @@
 				F4BF37B31E3EFA7A00CACE2F /* CrossingTheDivideTests */,
 				F4BF37BE1E3EFA7A00CACE2F /* CrossingTheDivideUITests */,
 				F4BF379D1E3EFA7A00CACE2F /* Products */,
+				F49C67CC1E404C3300C4C59F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +119,7 @@
 		F4BF379E1E3EFA7A00CACE2F /* CrossingTheDivide */ = {
 			isa = PBXGroup;
 			children = (
+				F4BF37CD1E3EFBAD00CACE2F /* CPP */,
 				F4BF379F1E3EFA7A00CACE2F /* AppDelegate.swift */,
 				F4BF37A11E3EFA7A00CACE2F /* ViewController.swift */,
 				F4BF37A31E3EFA7A00CACE2F /* Main.storyboard */,
@@ -123,6 +146,19 @@
 				F4BF37C11E3EFA7A00CACE2F /* Info.plist */,
 			);
 			path = CrossingTheDivideUITests;
+			sourceTree = "<group>";
+		};
+		F4BF37CD1E3EFBAD00CACE2F /* CPP */ = {
+			isa = PBXGroup;
+			children = (
+				F49C67CF1E404CC500C4C59F /* CrossingTheDivideLib.hpp */,
+				F4BF37CF1E3EFBDA00CACE2F /* CPP.cpp */,
+				F4BF37D01E3EFBDA00CACE2F /* CPP.hpp */,
+				F4BF37CE1E3EFBDA00CACE2F /* CrossingTheDivide-Bridging-Header.h */,
+				F4BF37D21E3EFDEC00CACE2F /* OCPP.mm */,
+				F4BF37D41E3EFE8F00CACE2F /* OCPP.h */,
+			);
+			name = CPP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +230,7 @@
 					F4BF379B1E3EFA7A00CACE2F = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = VHWFV2V25Z;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					F4BF37AF1E3EFA7A00CACE2F = {
@@ -262,8 +299,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4BF37D11E3EFBDA00CACE2F /* CPP.cpp in Sources */,
 				F4BF37A21E3EFA7A00CACE2F /* ViewController.swift in Sources */,
 				F4BF37A01E3EFA7A00CACE2F /* AppDelegate.swift in Sources */,
+				F4BF37D31E3EFDEC00CACE2F /* OCPP.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,11 +454,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = VHWFV2V25Z;
 				INFOPLIST_FILE = CrossingTheDivide/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)Lib/CrossingTheDivideLib/CrossingTheDivideLib/Products/usr/local/lib",
+					"$(PROJECT_DIR)Lib/CrossingTheDivideLib/CrossingTheDivideLib/Products/usr/local/lib/libCrossingTheDivideLib.a/Products/usr/local/lib",
+					"$(PROJECT_DIR)Lib/CrossingTheDivideLib/CrossingTheDivideLib/CrossingTheDivideLib\\ /Products/usr/local/lib",
+					"$(PROJECT_DIR)Lib/CrossingTheDivideLib/CrossingTheDivideLib\\ 2017-02-20\\ 21-59-43/Products/usr/local/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.teamawesomemcpants.CrossingTheDivide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CrossingTheDivide/CrossingTheDivide-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -428,11 +477,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = VHWFV2V25Z;
 				INFOPLIST_FILE = CrossingTheDivide/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)Lib/CrossingTheDivideLib/CrossingTheDivideLib/Products/usr/local/lib",
+					"$(PROJECT_DIR)Lib/CrossingTheDivideLib/CrossingTheDivideLib/Products/usr/local/lib/libCrossingTheDivideLib.a/Products/usr/local/lib",
+					"$(PROJECT_DIR)Lib/CrossingTheDivideLib/CrossingTheDivideLib/CrossingTheDivideLib\\ /Products/usr/local/lib",
+					"$(PROJECT_DIR)Lib/CrossingTheDivideLib/CrossingTheDivideLib\\ 2017-02-20\\ 21-59-43/Products/usr/local/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.teamawesomemcpants.CrossingTheDivide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CrossingTheDivide/CrossingTheDivide-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -514,6 +572,7 @@
 				F4BF37C61E3EFA7A00CACE2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4BF37C71E3EFA7A00CACE2F /* Build configuration list for PBXNativeTarget "CrossingTheDivideTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +581,7 @@
 				F4BF37C91E3EFA7A00CACE2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4BF37CA1E3EFA7A00CACE2F /* Build configuration list for PBXNativeTarget "CrossingTheDivideUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +590,7 @@
 				F4BF37CC1E3EFA7A00CACE2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
